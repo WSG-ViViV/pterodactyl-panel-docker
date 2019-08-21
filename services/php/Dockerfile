@@ -27,7 +27,7 @@ RUN chown -R pterodactyl:pterodactyl /var/www/html/pterodactyl /var/www/html/env
 
 # Deploy panel files.
 USER pterodactyl:pterodactyl
-RUN curl -Lo panel.tar.gz https://github.com/Pterodactyl/Panel/releases/download/v0.7.0/panel.tar.gz
+RUN curl -Lo panel.tar.gz https://github.com/Pterodactyl/Panel/releases/download/v0.7.15/panel.tar.gz
 RUN tar --strip-components=1 -xzvf panel.tar.gz
 # Since Docker's configuration mounting feature sucks, we're going to use a cheap
 # workaround involving symbolic links.
